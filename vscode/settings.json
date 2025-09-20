@@ -1,0 +1,50 @@
+{
+  "code-runner.executorMap": {
+    "typescript": "npx ts-node --files --transpile-only"
+  },
+
+  // 🔥 Aumenta contraste de tokens (palavras-chave, variáveis, strings etc.)
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": ["keyword", "storage.type", "storage.modifier"],
+        "settings": {
+          "foreground": "#FF007F", // rosa neon para keywords
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "string",
+        "settings": {
+          "foreground": "#2aca25" // verde neon para strings
+        }
+      },
+      {
+        "scope": "variable",
+        "settings": {
+          "foreground": "#ffffff" // amarelo vibrante para variáveis
+        }
+      },
+      {
+        "scope": "function",
+        "settings": {
+          "foreground": "#00BFFF" // azul claro para funções
+        }
+      }
+    ]
+  },
+
+  // 🌈 Interface mais vibrante
+  "workbench.colorCustomizations": {
+    "editor.background": "#1a1a1f",
+    "editorLineNumber.foreground": "#FF007F",
+    "editorCursor.foreground": "#00FF9C",
+    "editor.selectionBackground": "#3A3D41",
+    "activityBar.background": "#0D0F10",
+    "sideBar.background": "#151720"
+  },
+  "workbench.colorTheme": "Dracula Theme",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
